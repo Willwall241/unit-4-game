@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+
+  <title>Chaos Emerald Game</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="page-header">
+      <h1>Chaos Emerald Game!</h1>
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <div classs="row">
+      <div class="col-lg-8 mx-auto text-center instruction">
+        <p class="center-block">You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal
+          you will add a specific amount of points to your total score. You win the game by matching your total score to
+          the random number displayed below, you lose the game if your total score goes above the random number. The value
+          of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change
+          the values of each crystal.</p>
+
+      </div>
+    </div>
+
+    <div classs="row">
+      <div class="col-lg-12 my-4 text-center">
+        <button id="blueEmerald">
+          <img id="blueImage" alt="Blue Emerald">
+        </button>
+        <button id="greenEmerald">
+          <img id="greenImage" alt="Green Emerald">
+        </button>
+        <button id="redEmerald">
+          <img id="redImage" alt="Red Emerald">
+        </button>
+        <button id="yellowEmerald">
+          <img id="yellowImage" alt="Yellow Emerald">
+        </button>
+        <br>
+        <button id="reset" type="button" class="btn btn-danger my-4">Reset</button>
+
+      </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-md-4 text-center border m-auto scoreBoard">
+          <div>Number to Match</div>
+          <p id="randomNumber"></p>
+
+        </div>
+
+        <div class="col-md-4 text-center border m-auto scoreBoard">
+          <div id="yourNumber">Current Number</div>
+          <p id="currentNumber"></p>
+
+        </div>
+
+        <div class="col-md-2 text-center border m-auto scoreBoard">
+
+          <div id="condition">
+
+          </div>
+
+          <div>Wins:
+
+            <p id="wins"></p>
+
+          </div>
+
+
+          <div>Loses:
+
+            <p id="loses"></p>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
