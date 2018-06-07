@@ -74,8 +74,6 @@ $("#blueEmerald").on("click", function () {
   if (currNum < ranNum && gameOn) {
     currNum = blue.value + currNum;
     $("#currentNumber").text(currNum);
-    console.log(blue.value);
-    console.log(currNum);
     checkWin();
   }
 
@@ -87,8 +85,6 @@ $("#greenEmerald").on("click", function () {
   if (currNum < ranNum && gameOn) {
     currNum = green.value + currNum;
     $("#currentNumber").text(currNum);
-    console.log(green.value);
-    console.log(currNum);
     checkWin();
   }
 
@@ -100,8 +96,6 @@ $("#redEmerald").on("click", function () {
   if (currNum < ranNum && gameOn) {
     currNum = red.value + currNum;
     $("#currentNumber").text(currNum);
-    console.log(red.value);
-    console.log(currNum);
     checkWin();
   }
 
@@ -113,8 +107,6 @@ $("#yellowEmerald").on("click", function () {
   if (currNum < ranNum && gameOn) {
     currNum = yellow.value + currNum;
     $("#currentNumber").text(currNum);
-    console.log(yellow.value);
-    console.log(currNum);
     checkWin();
   }
 
