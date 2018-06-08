@@ -141,3 +141,4 @@ $("#reset").on("click", function () {
 
 
 startGame();
+
